@@ -1,0 +1,25 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+$route['default_controller'] = 'Spk';
+$route['404_override'] = '';
+$route['translate_uri_dashes'] = FALSE;
+$route['home/login']='Spk/plogin';
+$route['home/logout']='Spk/lgout';
+$route['home/menu']='Admin/menu';
+$route['home/menu/(:num)']='Spk/menu/$1';
+$route['home/cpwd']='Admin/ubahpwd';
+$route['home/ppwd']='Admin/prosespwd';
+$route['home/upalt']='Spk/upalter';
+$route['home/upkritera']='Spk/upkri';
+$route['home/palter']='Spk/plusalter';
+$route['home/nialt']='Spk/upalterni';
+$route['home/plkr']='Spk/pluskri';
+$route['wowmodal/(:any)']='Admin/getmodal/$1';
+$route['users']='Usermanager/index';
+$route['userjson']='Usermanager/listuser';
+$route['useredit/(:any)']='Usermanager/edituser/$1';
+$route['history']='Admin/histo';
+$route['logout']='Spk/lgout';
+$route['user/home']='User/menu';
+$route['setting']='Admin/setting';
+$route['user/foto/(:num)']="User/ubahfoto/$1";
